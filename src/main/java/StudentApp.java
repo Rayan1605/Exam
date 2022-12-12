@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -28,10 +27,10 @@ public class StudentApp {
         try {
             Scanner file = new Scanner(new File(filename));
             FileWriter fileWriter = new FileWriter(filename,true);
-            fileWriter.write(student.getName());
-            fileWriter.write(student.getAge());
-            fileWriter.write(student.getIdnumber());
-            fileWriter.write(student.getAddress());
+            fileWriter.write(student.getName() + " \n");
+            fileWriter.write(student.getAge() + " \n");
+            fileWriter.write(student.getIdnumber() + " \n");
+            fileWriter.write(student.getAddress() + " \n");
              file.close();
 
             System.out.println("Your details have been saved ");

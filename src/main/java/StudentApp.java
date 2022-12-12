@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class StudentApp {
@@ -17,6 +21,21 @@ public class StudentApp {
         System.out.println(student);
 
 
+        System.out.println("Please enter a filename");
+        String filename = myinput.next();
+
+
+        try {
+            Scanner file = new Scanner(new File(filename));
+            FileWriter fileWriter = new FileWriter(filename,true);
+            fileWriter.write(student.getName());
+            fileWriter.write(student.getAge());
+            fileWriter.write(student.getIdnumber());
+            fileWriter.write(student.getAddress());
+             file.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }

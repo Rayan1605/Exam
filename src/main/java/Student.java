@@ -20,6 +20,13 @@ public class Student {
         return name;
     }
 
+    public String toString(){
+        return "Your Name  is " + getName() + "  | " +
+                "  Your age is "   + getAge() +
+                "  |  Your id is " + getIdnumber() +
+                "  |   Your address is " + getAddress();
+    }
+
     public void setName(String name) {
         this.name = name;
     }

@@ -14,11 +14,7 @@ public class StudentApp {
         System.out.println("Please enter your age");
         student.setAge(myinput.nextInt());
 
-        System.out.println("Your Name  is " + student.getName() + "  | " +
-                "  Your age is "   + student.getAge() +
-                "  |  Your id is " + student.getIdnumber() +
-                "  |   Your address is " + student.getAddress()
-                );
+        System.out.println(student);
 
 
 

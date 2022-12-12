@@ -33,6 +33,8 @@ public class StudentApp {
             fileWriter.write(student.getIdnumber());
             fileWriter.write(student.getAddress());
              file.close();
+
+            System.out.println("Your details have been saved ");
         } catch (IOException e) {
             e.printStackTrace();
         }
